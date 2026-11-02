@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "description": "Golden question set for Clause. Every expected source names a sample document and a short text it must contain. must_include lists key facts: each inner list is a group of acceptable alternatives.",
+  "documents": [
+    "HR_Policy_v7.pdf",
+    "Supplier_Agreement_2026.pdf",
+    "Employment_Contract_Template.docx",
+    "Returns_and_Warranty_FAQ.md",
+    "Price_List_Q3_2026.csv",
+    "Travel_and_Expenses_Policy.html",
+    "Delivery_Policy.txt"
+  ],
+  "questions": [
+    {
+      "id": "q01", "category": "single-doc",
+      "question": "How many days of paid annual leave do employees get?",
+      "reference": "Employees get 20 working days of paid annual leave per calendar year, in addition to public holidays.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "20 working days"}],
+      "must_include": [["20"]]
+    },
+    {
+      "id": "q02", "category": "single-doc",
+      "question": "What is the minimum notice period for permanent employees?",
+      "reference": "Permanent employees must give and receive at least thirty (30) days' notice in writing.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "thirty (30) days"}],
+      "must_include": [["30", "thirty"]]
+    },
+    {
+      "id": "q03", "category": "single-doc",
+      "question": "Who has to approve a payment in lieu of notice?",
+      "reference": "Payment in lieu of notice needs the written approval of the HR Director.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "written approval of the HR Director"}],
+      "must_include": [["HR Director"]]
+    },
+    {
+      "id": "q04", "category": "single-doc",
+      "question": "How long is paternity leave?",
+      "reference": "Paternity leave is 2 weeks of fully paid leave, taken within three months of the birth or adoption.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "2 weeks of fully paid paternity leave"}],
+      "must_include": [["2 weeks", "two weeks"]]
+    },
+    {
+      "id": "q05", "category": "single-doc",
+      "question": "How many days per week can employees work remotely?",
+      "reference": "Employees may work remotely up to 2 days per week with their manager's approval.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "up to 2 days per week"}],
+      "must_include": [["2 days", "two days"]]
+    },
+    {
+      "id": "q06", "category": "single-doc",
+      "question": "When is a medical certificate needed for sick leave?",
+      "reference": "A medical certificate is required for absences longer than 3 consecutive days.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "longer than 3 consecutive days"}],
+      "must_include": [["3", "three"]]
+    },
+    {
+      "id": "q07", "category": "single-doc",
+      "question": "How long is the probation period in the employment contract?",
+      "reference": "The employment contract sets a probation period of three (3) months.",
+      "answerable": true,
+      "expected_sources": [{"file": "Employment_Contract_Template.docx", "contains": "three (3) months"}],
+      "must_include": [["3 months", "three (3) months", "three months"]]
+    },
+    {
+      "id": "q08", "category": "single-doc",
+      "question": "How long must information be kept confidential after employment ends?",
+      "reference": "Company information must be kept confidential for two (2) years after employment ends.",
+      "answerable": true,
+      "expected_sources": [{"file": "Employment_Contract_Template.docx", "contains": "two (2) years"}],
+      "must_include": [["2 years", "two (2) years", "two years"]]
+    },
+    {
+      "id": "q09", "category": "single-doc",
+      "question": "How much notice is needed to terminate the supply agreement for convenience?",
+      "reference": "Either party can terminate for convenience with at least sixty (60) days' written notice.",
+      "answerable": true,
+      "expected_sources": [{"file": "Supplier_Agreement_2026.pdf", "contains": "sixty (60) days"}],
+      "must_include": [["60", "sixty"]]
+    },
+    {
+      "id": "q10", "category": "single-doc",
+      "question": "Within how many days must supplier invoices be paid?",
+      "reference": "Undisputed invoices must be paid within forty-five (45) days of receipt.",
+      "answerable": true,
+      "expected_sources": [{"file": "Supplier_Agreement_2026.pdf", "contains": "forty-five (45) days"}],
+      "must_include": [["45", "forty-five"]]
+    },
+    {
+      "id": "q11", "category": "single-doc",
+      "question": "What interest is charged on late payments to the supplier?",
+      "reference": "Late payments carry interest of 1.5% per month on the overdue amount.",
+      "answerable": true,
+      "expected_sources": [{"file": "Supplier_Agreement_2026.pdf", "contains": "1.5% per month"}],
+      "must_include": [["1.5%"]]
+    },
+    {
+      "id": "q12", "category": "single-doc",
+      "question": "How long do customers have to return a product?",
+      "reference": "Products can be returned within 7 days of delivery if unused and in the original packaging.",
+      "answerable": true,
+      "expected_sources": [{"file": "Returns_and_Warranty_FAQ.md", "contains": "within 7 days of delivery"}],
+      "must_include": [["7 days", "seven days"]]
+    },
+    {
+      "id": "q13", "category": "single-doc",
+      "question": "Can sale items be returned?",
+      "reference": "Sale items are final sale and cannot be returned unless they are faulty.",
+      "answerable": true,
+      "expected_sources": [{"file": "Returns_and_Warranty_FAQ.md", "contains": "final sale"}],
+      "must_include": [["final sale", "cannot be returned"]]
+    },
+    {
+      "id": "q14", "category": "single-doc",
+      "question": "How long does a refund take?",
+      "reference": "Refunds reach the original payment method within 5 to 7 business days after the return arrives.",
+      "answerable": true,
+      "expected_sources": [{"file": "Returns_and_Warranty_FAQ.md", "contains": "5 to 7 business days"}],
+      "must_include": [["5 to 7", "5-7"]]
+    },
+    {
+      "id": "q15", "category": "keyword",
+      "question": "What is the price of SKU-4471?",
+      "reference": "SKU-4471, the X200 Wireless Headphones, costs PKR 24,999.",
+      "answerable": true,
+      "expected_sources": [{"file": "Price_List_Q3_2026.csv", "contains": "SKU-4471"}],
+      "must_include": [["24,999", "24999"]]
+    },
+    {
+      "id": "q16", "category": "keyword",
+      "question": "How much does the 65W USB-C Charger cost?",
+      "reference": "The 65W USB-C Charger (SKU-1108) costs PKR 3,999.",
+      "answerable": true,
+      "expected_sources": [{"file": "Price_List_Q3_2026.csv", "contains": "65W USB-C Charger"}],
+      "must_include": [["3,999", "3999"]]
+    },
+    {
+      "id": "q17", "category": "keyword",
+      "question": "What warranty does the X200 come with?",
+      "reference": "The X200 Wireless Headphones have an extended 2-year (24-month) warranty.",
+      "answerable": true,
+      "expected_sources": [
+        {"file": "Returns_and_Warranty_FAQ.md", "contains": "extended 2-year warranty"},
+        {"file": "Price_List_Q3_2026.csv", "contains": "SKU-4471"}
+      ],
+      "must_include": [["2-year", "2 year", "24"]]
+    },
+    {
+      "id": "q18", "category": "keyword",
+      "question": "What is the mileage rate for using a personal car for work?",
+      "reference": "Personal car use for work is reimbursed at PKR 45 per kilometre.",
+      "answerable": true,
+      "expected_sources": [{"file": "Travel_and_Expenses_Policy.html", "contains": "PKR 45 per kilometre"}],
+      "must_include": [["45"]]
+    },
+    {
+      "id": "q19", "category": "keyword",
+      "question": "What is the daily allowance for international travel?",
+      "reference": "The international daily allowance is USD 80 per day.",
+      "answerable": true,
+      "expected_sources": [{"file": "Travel_and_Expenses_Policy.html", "contains": "USD 80 per day"}],
+      "must_include": [["80"]]
+    },
+    {
+      "id": "q20", "category": "single-doc",
+      "question": "When is business class allowed on flights?",
+      "reference": "Business class is allowed for flights over 6 hours, with director approval.",
+      "answerable": true,
+      "expected_sources": [{"file": "Travel_and_Expenses_Policy.html", "contains": "Business class is allowed"}],
+      "must_include": [["6 hours", "six hours"]]
+    },
+    {
+      "id": "q21", "category": "single-doc",
+      "question": "How long does express delivery take and where is it available?",
+      "reference": "Express delivery takes 1 business day and is available only in Lahore, Karachi and Islamabad.",
+      "answerable": true,
+      "expected_sources": [{"file": "Delivery_Policy.txt", "contains": "Express delivery takes 1 business day"}],
+      "must_include": [["1 business day", "one business day"]]
+    },
+    {
+      "id": "q22", "category": "single-doc",
+      "question": "When is delivery free?",
+      "reference": "Delivery is free for orders over PKR 10,000; smaller orders pay a flat PKR 250.",
+      "answerable": true,
+      "expected_sources": [{"file": "Delivery_Policy.txt", "contains": "free for orders over PKR 10,000"}],
+      "must_include": [["10,000", "10000"]]
+    },
+    {
+      "id": "q23", "category": "multi-doc",
+      "question": "Compare the notice period in the employment contract with the notice period in the HR policy.",
+      "reference": "Both require 30 days: the contract says either party may end employment with thirty (30) days' written notice, and the HR policy sets a minimum of thirty (30) days for permanent employees.",
+      "answerable": true,
+      "expected_sources": [
+        {"file": "Employment_Contract_Template.docx", "contains": "thirty (30) days"},
+        {"file": "HR_Policy_v7.pdf", "contains": "thirty (30) days"}
+      ],
+      "must_include": [["30", "thirty"]]
+    },
+    {
+      "id": "q24", "category": "multi-doc",
+      "question": "Does the contract's payment in lieu of notice rule match the HR policy?",
+      "reference": "Not fully: the contract lets the company pay in lieu of notice at its discretion, but the HR policy requires written approval from the HR Director.",
+      "answerable": true,
+      "expected_sources": [
+        {"file": "Employment_Contract_Template.docx", "contains": "payment in lieu of notice"},
+        {"file": "HR_Policy_v7.pdf", "contains": "written approval of the HR Director"}
+      ],
+      "must_include": [["HR Director"]]
+    },
+    {
+      "id": "q25", "category": "multi-doc",
+      "question": "My X200 headphones broke 10 days after delivery. Can I return them, or what happens?",
+      "reference": "The 7-day return window has passed, so it is handled as a warranty repair; the X200 has a 2-year warranty.",
+      "answerable": true,
+      "expected_sources": [
+        {"file": "Returns_and_Warranty_FAQ.md", "contains": "7-day return window"},
+        {"file": "Returns_and_Warranty_FAQ.md", "contains": "extended 2-year warranty"}
+      ],
+      "must_include": [["warranty"]]
+    },
+    {
+      "id": "q26", "category": "follow-up",
+      "history": [
+        ["user", "How many days of paid annual leave do employees get?"],
+        ["assistant", "Employees get 20 working days of paid annual leave per year [1]."]
+      ],
+      "question": "How many of those days can be carried over if unused?",
+      "reference": "Up to 5 unused days can be carried over, and they must be used by 31 March.",
+      "answerable": true,
+      "expected_sources": [{"file": "HR_Policy_v7.pdf", "contains": "Up to 5 unused days"}],
+      "must_include": [["5", "five"]]
+    },
+    {
+      "id": "q27", "category": "unanswerable",
+      "question": "Who is the CEO of Acme?",
+      "reference": "Not in the documents.",
+      "answerable": false,
+      "expected_sources": [],
+      "must_include": []
+    },
+    {
+      "id": "q28", "category": "unanswerable",
+      "question": "Can I bring my dog to the office?",
+      "reference": "Not in the documents.",
+      "answerable": false,
+      "expected_sources": [],
+      "must_include": []
+    },
+    {
+      "id": "q29", "category": "unanswerable",
+      "question": "Does the company reimburse gym memberships?",
+      "reference": "Not in the documents.",
+      "answerable": false,
+      "expected_sources": [],
+      "must_include": []
+    },
+    {
+      "id": "q30", "category": "unanswerable",
+      "question": "What is the parking fee at the Karachi office?",
+      "reference": "Not in the documents.",
+      "answerable": false,
+      "expected_sources": [],
+      "must_include": []
+    }
+  ]
+}
